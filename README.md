@@ -1,4 +1,4 @@
-# Possesion
+# Possession
 
 A simple app to POSSE, Publish (on your) Own Site, Syndicate Elsewhere.
 
