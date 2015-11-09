@@ -17,3 +17,10 @@ Run the server:
 
     bundle exec rails s
 
+## Goals
+
+* Follow POSSE syndication model and other indie web principles.
+* A blog where posts are syndicated to Medium.
+* A links section.
+* Tweets are published and syndicated to Twitter.
+* Reverse syndicate starred/read later items on Twitter, YouTube, Vimeo, Feedbin and Instapaper.
