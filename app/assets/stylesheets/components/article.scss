@@ -1,0 +1,53 @@
+.Article {
+
+}
+
+.Article-heading {
+  margin-bottom: 10px;
+
+  @media only screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+}
+
+.Article-headingLink {
+  display: block;
+}
+
+.Article-publishedOn {
+  font-weight: 200;
+  color: #999;
+}
+
+.Article-body {
+  > p:last-child {
+    margin-bottom: 0;
+  }
+
+  a {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,0.4) 50%);
+    background-repeat: repeat-x;
+    background-size: 2px 2px;
+    background-position: 0 21px;
+
+    @media only screen and (min-width: 400px) {
+      background-position: 0 22px;
+    }
+
+    @media only screen and (min-width: 500px) {
+      background-position: 0 23px;
+    }
+
+    @media only screen and (min-width: 600px) {
+      background-position: 0 24px;
+    }
+
+    @media only screen and (min-width: 768px) {
+      background-position: 0 25px;
+    }
+
+    &:hover {
+      background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, #333 50%);
+    }
+  }
+}

@@ -1,11 +1,19 @@
-<h1>Listing articles</h1>
-<ul>
-  <% @articles.each do |article| %>
-    <li>
-      <a href="<%= article_path(article) %>"><%= article.title %></a>
-      (<%= link_to 'Edit', edit_article_path(article) %> or <%= link_to 'Destroy', article_path(article),
-              method: :delete,
-              data: { confirm: 'Are you sure?' } %>)
-    </li>
-  <% end %>
-</ul>
+<div class="Container Container--mainColumn" role="main">
+  <div class="Container-inner">
+    <p>Hi, my name is Alexis Fellenius Makrigianni. I’m a product designer, digital strategist and partner at <a href="http://oktavilla.se">Oktavilla</a> – a digital design agency based in Stockholm.</p>
+  </div>
+</div>
+<div class="Container Container--mainColumn" role="main">
+  <div class="Container-inner">
+    <ul>
+    <% @articles.each_with_index do |article, i| %>
+      <li>
+        <a href="<%= article_path(article) %>"><%= article.title %> <span><%= article.created_at.strftime('%B %e, %Y') %></span></a>
+        (<%= link_to 'Edit', edit_article_path(article) %> or <%= link_to 'Destroy', article_path(article),
+        method: :delete,
+        data: { confirm: 'Are you sure?' } %>)
+      </li>
+    <% end %>
+    </ul>
+  </div>
+</div>

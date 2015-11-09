@@ -1,0 +1,34 @@
+.Container {
+  padding: 0 6.25%;
+
+  @media only screen and (min-width: 768px) {
+    padding: 0 48px;
+  }
+}
+
+.Container + .Container {
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+
+  @media only screen and (min-width: 768px) {
+    padding-top: 50px;
+  }
+}
+
+.Container-inner {
+}
+
+.Container--mainColumn {
+  padding-bottom: 20px;
+
+  @media only screen and (min-width: 768px) {
+    padding-bottom: 50px;
+  }
+
+  .Container-inner {
+    @media only screen and (min-width: 768px) {
+      max-width: 30em;
+      margin: 0 auto;
+    }
+  }
+}

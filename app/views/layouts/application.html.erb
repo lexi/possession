@@ -1,14 +1,45 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Possesion</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <title><%= "Alexis Fellenius Makrigianni" %></title>
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= stylesheet_link_tag "application" %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <script type="text/javascript" src="//use.typekit.net/irp6ewa.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="Container">
+        <div class="Container-inner">
+          <header role="banner" class="Masthead">
+            <div class="Masthead-title">
+              <a href="/" class="Masthead-titleHomeLink">Alexis</a> is a designer and partner at <a href="http://oktavilla.se" class="Masthead-titleCompanyLink">Oktavilla</a>.
+            </div>
+            <div class="Masthead-navigation">
+              <nav class="Navigation" role="navigation">
+                <ul class="Navigation-list">
+                  <li class="Navigation-listItem"><a href="<%= articles_path -%>" class="Navigation-listItemLink">Writing</a></li>
+                  <li class="Navigation-listItem"><a href="#" class="Navigation-listItemLink">About</a></li>
+                </ul>
+              </nav>
+            </div>
+          </header>
+        </div>
+      </div>
 
-<%= yield %>
+      <%= yield %>
 
-</body>
+      <footer class="Container" id="about" role="contentinfo">
+        <div class="Container-inner">
+          <div class="Footer">
+            <p>&copy; Alexis Fellenius Makrigianni 2008 – 2015.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
