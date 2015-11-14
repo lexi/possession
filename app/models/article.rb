@@ -1,3 +1,3 @@
 class Article < ActiveRecord::Base
-  validates :title, :text, presence: true
+  validates :title, :body, presence: true
 end

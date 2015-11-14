@@ -8,7 +8,7 @@ class RenderableArticle < DelegateClass(Article)
     super article
   end
 
-  def text
-    MarkdownRenderer.render object.text
+  def body
+    MarkdownRenderer.render object.body
   end
 end
