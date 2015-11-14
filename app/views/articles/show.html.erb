@@ -1,7 +1,12 @@
 <main class="Container Container--mainColumn" role="main">
   <div class="Container-inner">
     <article class="Article">
-      <h1 class="Article-heading"><%= @article.title %> <span class="Article-publishedOn"><%= @article.created_at.strftime('%B %e, %Y') %></span></h1>
+      <h1 class="Article-heading">
+        <%= @article.title %>
+        <span class="Article-publishedOn">
+          <%= @article.created_at.strftime('%B %e, %Y') %>
+        </span>
+      </h1>
       <div class="Article-body">
         <%= @article.text %>
       </div>
