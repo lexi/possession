@@ -24,3 +24,10 @@ Run the server:
 * A links section.
 * Tweets are published and syndicated to Twitter.
 * Reverse syndicate starred/read later items on Twitter, YouTube, Vimeo, Feedbin and Instapaper.
+
+## Todo
+
+* Switch to Postgres.
+* Redirect Tumblr links.
+* Basic authentication.
+* Nicer urls.
