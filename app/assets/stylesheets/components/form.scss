@@ -1,0 +1,27 @@
+//
+// Component: Form
+// =============================================================================
+
+$component-name: "Form";
+$component-base: ".#{$component-name}";
+
+#{$component-base} {
+  // Element: Input
+  // ---------------------------------------------------------------------------
+  &-input {
+
+    &--heading {
+      @extend %typography-heading;
+    }
+
+    &--chromeless {
+      border: 0;
+      outline: 0;
+    }
+
+    &--fullWidth {
+      width: 100%;
+    }
+
+  }
+}

@@ -1,3 +1,15 @@
+%typography-heading {
+  font-size: 1.5em;
+  line-height: 1;
+  font-weight: bold;
+  font-family: "freight-display-pro";
+
+  @media only screen and (min-width: 768px) {
+    font-size: 56px;
+    line-height: 1;
+  }
+}
+
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -50,15 +62,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 1.5em;
-  line-height: 1;
-  font-weight: bold;
-  font-family: "freight-display-pro";
-
-  @media only screen and (min-width: 768px) {
-    font-size: 56px;
-    line-height: 1;
-  }
+  @extend %typography-heading;
 }
 
 h2 {

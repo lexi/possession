@@ -13,9 +13,9 @@
     </div>
   <% end %>
 
-  <%= f.text_field :title, placeholder: "Title" %>
+  <%= f.text_field :title, placeholder: "Title", class: "Form-input Form-input--fullWidth Form-input--chromeless Form-input--heading" %>
 
-  <%= f.text_area :body %>
+  <%= f.text_area :body, placeholder: "Write your minds content...", rows: 20, class: "Form-input Form-input--fullWidth Form-input--chromeless" %>
 
   <%= f.submit %>
 <% end %>
