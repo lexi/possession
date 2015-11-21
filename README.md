@@ -28,6 +28,5 @@ Run the server:
 ## Todo
 
 * Switch to Postgres.
-* Redirect Tumblr links.
 * Basic authentication.
 * Nicer urls.

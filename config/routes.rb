@@ -4,6 +4,15 @@ Rails.application.routes.draw do
 
   resources :articles
 
+  # Redirect old URLs for moved articles
+
+  get '/post/18401593732/thoughts-on-responsive-navigation', to: redirect('/articles/thoughts-on-responsive-navigation')
+  get '/post/18546241952/the-select-menu-navigation-pattern', to: redirect('/articles/the-select-menu-navigation-pattern')
+
+  # Redirect the rest of the Tumblr posts to their new location
+
+  get '/post/:id/:name', to: redirect('http://v1.lexi.se/post/%{id}/%{name}')
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
