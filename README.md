@@ -30,4 +30,3 @@ Run the server:
 * Switch to Postgres.
 * Redirect Tumblr links.
 * Basic authentication.
-* Nicer urls.
