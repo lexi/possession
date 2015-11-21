@@ -23,7 +23,7 @@ Run the server:
 * A blog where posts are syndicated to Medium.
 * A links section.
 * Tweets are published and syndicated to Twitter.
-* Reverse syndicate starred/read later items on Twitter, YouTube, Vimeo, Feedbin and Instapaper.
+* Reverse syndicate starred/read later items on Medium, Twitter, YouTube, Vimeo, Pinboard, Feedbin and Instapaper.
 
 ## Todo
 
