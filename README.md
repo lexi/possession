@@ -29,4 +29,3 @@ Run the server:
 
 * Switch to Postgres.
 * Basic authentication.
-* Nicer urls.
