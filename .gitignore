@@ -36,8 +36,6 @@ build/
 
 db/development.sqlite3
 
-config/secrets.yml
-
 log/development.log
 
 config/database.yml
