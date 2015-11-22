@@ -4,8 +4,8 @@ Playground to learn Ruby and Rails better. Right now the app doesn’t do much a
 
 ## Requirements
 
-* Ruby (version specified in `.ruby-version`)
-* SQLite
+* Ruby (version as specified in `.ruby-version`)
+* PostgreSQL (`brew install postgresql`)
 
 ## Installation
 
@@ -13,9 +13,33 @@ Playground to learn Ruby and Rails better. Right now the app doesn’t do much a
     rbenv rehash
     bundle
 
-Run the server:
+Add a file called `.env` in the root directory of the application.
+
+```yaml
+# Super secret key that is used to encrypt database records
+# check what is set in production if you need to be able to decrypt production data
+ENCRYPTION_KEY=somesecret
+DEVELOPMENT_DATABASE=possession_development
+TEST_DATABASE=possession_test
+DATABASE_USERNAME=username # your local postgres db user
+DATABASE_PASSWORD=password # your local postgres db password
+RACK_ENV=development
+PORT=3000
+BASIC_AUTH_USERNAME=yourusername
+BASIC_AUTH_PASSWORD=yourpassword
+```
+
+Create the databases by running:
+
+    rake db:create:all
+
+Now you’re good to go, run the server:
 
     bundle exec rails s
+
+## Ready for Heroku
+
+The app is ready to deploy to Heroku. [Read about how to get started](https://devcenter.heroku.com/articles/getting-started-with-rails4)
 
 ## Goals
 
