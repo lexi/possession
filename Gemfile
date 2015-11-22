@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby "2.2.3"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
@@ -27,6 +27,8 @@ gem "redcarpet", "~> 3.3.3"
 
 gem 'friendly_id', '~> 5.1.0'
 
+gem 'dotenv-rails', :groups => [:development, :test]
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -49,3 +51,4 @@ group :development do
   gem 'spring'
 end
 
+gem 'rails_12factor', group: :production
