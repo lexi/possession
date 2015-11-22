@@ -27,5 +27,4 @@ Run the server:
 
 ## Todo
 
-* Redirect Tumblr links.
 * Basic authentication.
