@@ -27,5 +27,4 @@ Run the server:
 
 ## Todo
 
-* Switch to Postgres.
 * Basic authentication.
