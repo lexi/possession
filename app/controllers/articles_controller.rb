@@ -3,6 +3,14 @@ class ArticlesController < ApplicationController
     @articles = Article.all.order("created_at DESC")
   end
 
+  def feed
+    @articles = Article.all.order("created_at DESC")
+
+    respond_to do |format|
+      format.rss { render :layout => false }
+    end
+  end
+
   def show
     @article = RenderableArticle.new Article.friendly.find(params[:id])
 
