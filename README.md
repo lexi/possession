@@ -43,12 +43,18 @@ The app is ready to deploy to Heroku. [Read about how to get started](https://de
 
 ## Goals
 
-* Follow POSSE syndication model and other indie web principles.
+* Follow POSSE syndication model and other indie web principles ([IndieWebify.me](http://indiewebify.me/)).
 * A blog where posts are syndicated to Medium.
-* A links section.
+* A links, quotes and books section.
+* Posts and links are taggable.
 * Tweets are published and syndicated to Twitter.
 * Reverse syndicate starred/read later items on Medium, Twitter, YouTube, Vimeo, Pinboard, Feedbin and Instapaper.
 
 ## Todo
 
 * Basic authentication.
+* [Medium like editor](https://github.com/yabwe/medium-editor)
+* RSS feed.
+* Google Analytics.
+* OpenGraph meta tags.
+* Use HTTPS.
