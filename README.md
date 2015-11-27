@@ -55,6 +55,5 @@ The app is ready to deploy to Heroku. [Read about how to get started](https://de
 * Basic authentication.
 * [Medium like editor](https://github.com/yabwe/medium-editor)
 * RSS feed.
-* Google Analytics.
 * OpenGraph meta tags.
 * Use HTTPS.
