@@ -31,7 +31,11 @@ BASIC_AUTH_PASSWORD=yourpassword
 
 Create the databases by running:
 
-    rake db:create:all
+    bundle exec rake db:create:all
+
+Now run the migrations:
+
+    bundle exec rake db:migrate
 
 Now you’re good to go, run the server:
 
