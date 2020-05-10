@@ -8,10 +8,10 @@
     <ul>
     <% @articles.each_with_index do |article, i| %>
       <li>
-        <a href="<%= article_path(article) %>"><%= article.title %> <span><%= article.created_at.strftime('%B %e, %Y') %></span></a>
-        (<%= link_to 'Edit', edit_article_path(article) %> or <%= link_to 'Destroy', article_path(article),
-        method: :delete,
-        data: { confirm: 'Are you sure?' } %>)
+        <a href="<%= article_path(article) %>">
+          <%= article.title %>
+          <span><%= article.created_at.strftime('%B %e, %Y') %></span>
+        </a>
       </li>
     <% end %>
     </ul>

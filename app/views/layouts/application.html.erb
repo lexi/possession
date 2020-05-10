@@ -33,6 +33,9 @@
             <div class="Masthead-navigation">
               <nav class="Navigation" role="navigation">
                 <ul class="Navigation-list">
+                  <% if logged_in? %>
+                    <li class="Navigation-listItem"><%= link_to 'New', new_article_path, class: "Navigation-listItemLink" %></li>
+                  <% end %>
                   <li class="Navigation-listItem"><a href="<%= articles_path -%>" class="Navigation-listItemLink">Writing</a></li>
                   <li class="Navigation-listItem"><a href="#" class="Navigation-listItemLink">About</a></li>
                 </ul>
