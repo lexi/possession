@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   resources :articles
 
+  get 'feed' => 'articles#feed'
+
   # Redirect old URLs for moved articles
 
   get '/post/18401593732/thoughts-on-responsive-navigation', to: redirect('/articles/thoughts-on-responsive-navigation')
